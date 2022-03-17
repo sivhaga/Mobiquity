@@ -9,13 +9,13 @@ import platforms.api.UserComments;
 
 public class UsersCommentsSteps {
 
-    @When("^Search for the user with username “(.+)”$$")
-    public void searchForTheUserWithUsername(String username) {
+    @When("^user search for the user with username “(.+)”$$")
+    public void userSearchForTheUserWithUsername(String username) {
         UserComments.getUsername(username);
     }
 
-    @Then("^Successfully get id and comments$")
-    public void successfullyGetIdAndComments()  {
+    @Then("^user successfully get id and comments$")
+    public void userSuccessfullyGetIdAndComments()  {
         UserComments.getComments();
     }
 

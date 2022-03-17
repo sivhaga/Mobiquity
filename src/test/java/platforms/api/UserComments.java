@@ -22,9 +22,9 @@ public class UserComments extends Utils {
     public static int id;
 
     public  static void getUsername(String username){
-        System.out.println("url= "+baseUrl);
+
         response1=   given().queryParam(usernameProperty,username).when().get(baseUrl+userResource);
-        System.out.println("results"+  response1.asString());
+        System.out.println("Getting results"+  response1.asString());
 
         try
         {
